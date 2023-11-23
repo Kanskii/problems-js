@@ -25,9 +25,9 @@ describe("exercise4 - problem2", () => {
     },
   ])(".Name", ({ firstName, lastName, expected }) => {
     const person = new Name(firstName, lastName);
-    expect(person.firstName).toBe(expected.firstName);
-    expect(person.lastName).toBe(expected.lastName);
-    expect(person.fullName).toBe(expected.fullName);
-    expect(person.initials).toBe(expected.initials);
+    expect(person.getFirstName).toBe(expected.firstName);
+    expect(person.getLastName).toBe(expected.lastName);
+    expect(person.getFullName).toBe(expected.fullName);
+    expect(person.getInitials).toBe(expected.initials);
   });
 });
